@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+button {
+    width: calc(100% - 20px); /* Ajuste a largura total subtraindo a margem horizontal */
+    padding: 10px;
+    margin: 0 10px 10px 10px; /* Adicione margem horizontal aqui */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: calc(100% - 20px); /* Ajuste a largura total subtraindo a margem horizontal */
+    margin: 0 10px 10px 10px; /* Adicione margem horizontal aqui */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.prediction-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 50px auto;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+.prediction-container h2 {
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.prediction-content {
+    font-size: 18px;
+    color: #333;
+}
+select {
+    width: calc(100% - 20px); /* Ajuste a largura total subtraindo a margem horizontal */
+    margin: 0 10px 10px 10px; /* Adicione margem horizontal aqui */
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%; /* Faz com que o select ocupe toda a largura disponível */
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
