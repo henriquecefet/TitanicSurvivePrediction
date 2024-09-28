@@ -10,14 +10,14 @@
 </head>
 <body>
     <div id="app">
-        <h1>Titanic Survived Prediction Form</h1>
+        <h1>Predição de Sobrevivência do Titanic</h1>
         <h2>Este é um modelo estatístico e pode cometer erros</h2>
         
         <form @submit.prevent="submitForm">
             <label for="Sex">Gênero do Passageiro:</label>
             <select id="Sex" required v-model="formData.Sex">
-                <option value="male">male</option>
-                <option value="female">female</option>
+                <option value="male">Masculino</option>
+                <option value="female">Feminino</option>
             </select>
 
             <label for="Embarked">Porto de Embarque:</label>

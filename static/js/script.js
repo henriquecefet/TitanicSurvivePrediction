@@ -8,7 +8,7 @@ new Vue({
             Age: '',
             Fare: ''
         },
-        prediction: "<p>Make a prediction</P>"
+        prediction: "<p>Faça uma predição</P>"
     },
     methods: {
         replaceComma(field) {
