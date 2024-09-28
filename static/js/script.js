@@ -27,10 +27,10 @@ new Vue({
                 console.log(data);
                 if (data.prediction === 1) {
                     console.log("Probably Survived");
-                    this.prediction = `<p style="color: green;">Probably Survived</p>`;
+                    this.prediction = `<p style="color: green;">Provavelmente sobreviveu</p>`;
                 } else if (data.prediction === 0) {
                     console.log("Unfortunally, probably died");
-                    this.prediction = `<p style="color: red;">Unfortunally, probably died</p>`;
+                    this.prediction = `<p style="color: red;">Inferlizmente, provavelmente faleceu</p>`;
                 } else {
                     this.prediction = `<p>Unexpected response from server</p>`;
                     console.log("Unexpected response from server"); 

@@ -11,16 +11,16 @@
 <body>
     <div id="app">
         <h1>Titanic Survived Prediction Form</h1>
-        <h2>Accuracy: 81%</h2>
+        <h2>Este é um modelo estatístico e pode cometer erros</h2>
         
         <form @submit.prevent="submitForm">
-            <label for="Sex">Sex:</label>
+            <label for="Sex">Gênero do Passageiro:</label>
             <select id="Sex" required v-model="formData.Sex">
                 <option value="male">male</option>
                 <option value="female">female</option>
             </select>
 
-            <label for="Embarked">curso:</label>
+            <label for="Embarked">Porto de Embarque:</label>
             <select id="Embarked" required v-model="formData.Embarked">
                 <option value="C">Cherbourg</option>
                 <option value="Q">Queenstown</option>
@@ -28,7 +28,7 @@
             </select>
             
             
-            <label for="Pclass">Pclass:</label>
+            <label for="Pclass">Classe do Navio:</label>
             <select id="Pclass" required v-model="formData.Pclass">
                 <option value=1>1</option>
                 <option value=2>2</option>
@@ -38,10 +38,10 @@
      
 
             
-            <label for="Age">Age:</label>
+            <label for="Age">Idade:</label>
             <input type="text" id="Age"  @input="replaceComma('Age')" placeholder="Enter a age"   required v-model="formData.Age">
             
-            <label for="Fare">Fare:</label>
+            <label for="Fare">Tarifa:</label>
             <input type="text" id="Fare"  @input="replaceComma('Fare')" placeholder="Enter a fare"   required v-model="formData.Fare">
 
             <button type="submit">Enviar</button>
@@ -51,10 +51,6 @@
             <div v-html="prediction"></div>
         </div>
     </div>
-    <footer id="footer">
-        {{ email }}
-        <a href="/trocarsenha">Trocar a senha</a>
-    </footer>
     <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
